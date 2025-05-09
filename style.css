@@ -17,60 +17,37 @@ body {
   border-radius: 15px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   width: 400px;
-  position: relative; /* Enable positioning for child elements */
 }
 
 h1 {
   font-size: 24px;
   color: #444;
+  position: relative;
 }
 
-textarea {
-  width: 100%;
-  height: 80px;
-  margin: 10px 0;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  resize: none;
-  font-size: 16px;
+.title-app {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
 }
 
-button {
-  background-color: #28a745;
-  color: white;
+#secret-button {
+  position: absolute;
+  top: 0;
+  left: 0;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.5s linear;
   border: none;
-  padding: 10px 20px;
-  font-size: 18px;
+  background-color: #007bff;
+  color: white;
+  font-size: 14px;
+  padding: 5px 10px;
   border-radius: 5px;
   cursor: pointer;
 }
 
-button:hover {
-  background-color: #218838;
-}
-
-#answer {
-  margin-top: 20px;
-  font-size: 20px;
-  font-weight: bold;
-  color: #555;
-}
-
-/* Secret Button Styling */
-.hover-area {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-}
-
-#secret-button {
-  visibility: hidden;
-  opacity: 0;
-  transition: visibility 0s, opacity 0.5s linear;
-}
-
-.hover-area:hover #secret-button {
+.title-app:hover #secret-button {
   visibility: visible;
   opacity: 1;
 }
