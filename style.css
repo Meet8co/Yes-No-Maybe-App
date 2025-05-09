@@ -55,3 +55,41 @@ button:hover {
   font-weight: bold;
   color: #555;
 }
+
+.hover-area {
+  position: relative;
+  margin-top: 30px;
+}
+
+#secret-button {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.5s linear;
+}
+
+.hover-area:hover #secret-button {
+  visibility: visible;
+  opacity: 1;
+}
+
+#secret-options {
+  margin-top: 10px;
+}
+
+.hidden {
+  display: none;
+}
+
+.option-button {
+  margin: 5px;
+  padding: 5px 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #f1f1f1;
+}
+
+.option-button:hover {
+  background-color: #ddd;
+}
