@@ -17,6 +17,7 @@ body {
   border-radius: 15px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   width: 400px;
+  position: relative; /* Enable positioning for child elements */
 }
 
 h1 {
@@ -56,9 +57,11 @@ button:hover {
   color: #555;
 }
 
+/* Secret Button Styling */
 .hover-area {
-  position: relative;
-  margin-top: 30px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
 }
 
 #secret-button {
